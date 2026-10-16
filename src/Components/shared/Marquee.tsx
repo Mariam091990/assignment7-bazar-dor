@@ -29,13 +29,13 @@ const Marquee = async () => {
     const response = await fetch("https://openapi.programming-hero.com/api/bazardor/products")
 
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
 
     return (
         <div>
            
 
-                <div className="overflow-hidden border-t border-gray-200 bg-gray-50 p-2">
+                <div className="overflow-hidden border-t border-gray-200 bg-gray-50 p-1.5">
 
 
                     <MarqueeText
