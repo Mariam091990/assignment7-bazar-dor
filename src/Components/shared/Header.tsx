@@ -8,50 +8,6 @@ import NavLinks from "./NavLinks";
 
 
 
-// const prices = [
-//     {
-//         emoji: "🍚",
-//         name: "স্বর্ণালি চাল",
-//         price: "৪৮",
-//         change: "২.৫%",
-//         up: true,
-//     },
-//     {
-//         emoji: "🍚",
-//         name: "মিনিকেট চাল",
-//         price: "৬০",
-//         change: "২.৯%",
-//         up: true,
-//     },
-//     {
-//         emoji: "🍚",
-//         name: "বাসমতি চাল",
-//         price: "৮০",
-//         change: "৬.৬%",
-//         up: true,
-//     },
-//     {
-//         emoji: "🫘",
-//         name: "মসুর ডাল",
-//         price: "১৪২",
-//         change: "২.৫%",
-//         up: true,
-//     },
-//     {
-//         emoji: "🥔",
-//         name: "ছোলা",
-//         price: "৯০",
-//         change: "৭.৮%",
-//         up: false,
-//     },
-//     {
-//         emoji: "🌾",
-//         name: "আলু",
-//         price: "৪৫",
-//         change: "৩.২%",
-//         up: true,
-//     },
-// ];
 
 export default function Navbar() {
 
@@ -126,71 +82,10 @@ export default function Navbar() {
 
 
             {/* ================= CATEGORY NAV ================= */}
-            {/* <nav className="border-t border-gray-100">
-                <div className="mx-auto flex max-w-[900px] items-center justify-center gap-5 overflow-x-auto px-4 py-2">
 
-                    {categories.map((category) => {
-                        const active = pathname === category.href;
+            <NavLinks />
 
-                        return (
-                            <Link
-                                key={category.name}
-                                href={category.href}
-                                className={`
-                  flex shrink-0 items-center gap-1.5
-                  rounded-md px-2 py-1
-                  text-xs transition
-                  ${active
-                                        ? "bg-green-100 font-semibold text-green-700"
-                                        : "text-gray-700 hover:bg-gray-100"
-                                    }
-                `}
-                            >
-                                <span>{category.emoji}</span>
-                                <span>{category.name}</span>
-                            </Link>
-                        );
-                    })}
 
-                </div>
-            </nav> */}
-                <NavLinks/>
-
-            {/* ================= PRICE TICKER ================= */}
-            {/* <div className="overflow-hidden border-t border-gray-200 bg-gray-50">
-
-                <div className="ticker-track flex w-max"> */}
-
-                    {/* Duplicate list for seamless infinite scrolling */}
-                    {/* {[...prices, ...prices].map((item, index) => (
-                        <div
-                            key={index}
-                            className="flex shrink-0 items-center gap-1.5 border-r border-gray-200 px-5 py-2 text-xs"
-                        >
-                            <span>{item.emoji}</span>
-
-                            <span className="text-gray-700">
-                                {item.name}
-                            </span>
-
-                            <span className="font-medium text-gray-800">
-                                {item.price} টাকা/কেজি
-                            </span>
-
-                            <span
-                                className={
-                                    item.up
-                                        ? "font-semibold text-red-500"
-                                        : "font-semibold text-green-600"
-                                }
-                            >
-                                {item.up ? "▲" : "▼"} {item.change}
-                            </span>
-                        </div>
-                    ))}
-
-                </div>
-            </div> */}
 
         </header>
     );

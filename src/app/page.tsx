@@ -8,27 +8,21 @@ import FallingPrice from "@/Components/Homepage/FallingPrice";
 import AllProducts from "@/Components/Homepage/AllProducts";
 
 export default async function Home() {
-"use cache";
+  "use cache";
 
-cacheLife("hours");
+  cacheLife("hours");
 
-const res = await fetch ("https://openapi.programming-hero.com/api/bazardor/products")
-const products: IProduct[]= await res.json();
-
-
-
-
-
-
+  const res = await fetch("https://openapi.programming-hero.com/api/bazardor/products")
+  const products: IProduct[] = await res.json();
 
   return (
     <div>
       <Marquee />
       <Banner />
       {/* <BazarLogs /> */}
-      <RisingPrice  products ={products}/>
-      <FallingPrice products={products}/>
-      <AllProducts products= {products} />
+      <RisingPrice products={products} />
+      <FallingPrice products={products} />
+      <AllProducts products={products} />
 
     </div>
   );
