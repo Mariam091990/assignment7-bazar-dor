@@ -47,7 +47,7 @@ function ChangeBadge({ product }: { product: IProduct }) {
 function ProductCard({ product }: { product: IProduct }) {
     return (
         <Link
-            href={`/products/${product.slug}`}
+            href={`/products/${product.id}`}
             className="group flex min-w-0 flex-col justify-between rounded-xl border border-gray-200 bg-white p-3 transition duration-200 hover:-translate-y-0.5 hover:border-green-200 hover:shadow-md"
         >
             <div className="flex items-start gap-3">

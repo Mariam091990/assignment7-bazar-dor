@@ -28,20 +28,24 @@ export default function Navbar() {
 
 
                     <div className=" bg-green-600 text-white rounded-sm">
+                        <Link href="/">
                         <Image
                             src="/logo-icon.png"
                             alt="bazarDor"
                             width={32}
                             height={32}
                         />
+                        </Link>
                     </div>
 
                     <div>
 
+                        <Link href="/"> 
                         <button className="btn ">  <h1 className="text-[16px] font-bold leading-none text-gray-800">
                             বাজার দর
                         </h1>
                         </button>
+                        </Link>
 
 
                         {/* <p className="mt-1  text-gray-500">
