@@ -11,6 +11,9 @@ const UserInfo = () => {
     const user = session?.user;
     console.log(user);
 
+    const handleSignOut = async () => {
+        await authClient.signOut();
+    };
 
 
     return (
@@ -19,26 +22,26 @@ const UserInfo = () => {
 
             {
                 user ? <div className=" flex items-center gap-2">
-<div className="tooltip tooltip-open tooltip-left " data-tip={user?.name} >
-                    <div className="avatar">
-                        <div className="mask mask-heart w-24">
-                            <Image alt="Tailwind-CSS-Avatar-component"
-                                src={user?.image as string}
-                                height={24}
-                                width={24}
-                                className="rounded-full"
-                            />      
+                    <div className="tooltip tooltip-open tooltip-left " data-tip={user?.name} >
+                        <div className="avatar">
+                            <div className="mask mask-heart w-24">
+                                <Image alt="Tailwind-CSS-Avatar-component"
+                                    src={user?.image as string}
+                                    height={24}
+                                    width={24}
+                                    className="rounded-full"
+                                />
+                            </div>
                         </div>
                     </div>
-</div>
-                    <Link
-                        href="/signout">
-                        <button
-                            className="rounded-md bg-red-600 px-3 py-1.5 text-sm text-white hover:bg-red-700"
-                        >
-                            সাইন আউট
-                        </button>
-                    </Link>
+
+
+                    <button onClick={handleSignOut}
+                        className="rounded-md bg-red-600 px-3 py-1.5 text-sm text-white hover:bg-red-700"
+                    >
+                        সাইন আউট
+                    </button>
+
 
 
                 </div>
