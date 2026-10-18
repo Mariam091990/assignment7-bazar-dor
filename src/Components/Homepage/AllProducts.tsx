@@ -6,10 +6,11 @@ const AllProducts = ({ products }: { products: IProduct[] }) => {
 
 
     return (
-        <section>
-            <div className="mx-auto w-225 mt-6">
-                <h2 className='text-2xl bold'> সব পণ্য</h2>
-                <small>মোট ৩৩টি পণ্য দেখানো হচ্ছে</small>
+        <section className="mt-4 w-full px-4 sm:px-6 lg:px-6">
+            <div className="mx-auto w-full max-w-4xl">
+                <h2 className='mb-3 text-5xl font-semibold text-indigo-800 sm:text-xl p-2.5'> <span className="text-red-600">▲</span>
+                    <span className="text-green-600">▼</span>
+                    সব পণ্য</h2>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 ">
                     {
                         products.map((product) =>

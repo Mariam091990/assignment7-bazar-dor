@@ -22,7 +22,9 @@ const UserInfo = () => {
 
             {
                 user ? <div className=" flex items-center gap-2">
+
                     <div className="tooltip tooltip-open tooltip-left " data-tip={user?.name} >
+                        <Link href="/profile">
                         <div className="avatar">
                             <div className="mask mask-heart w-24">
                                 <Image alt="Tailwind-CSS-Avatar-component"
@@ -33,6 +35,7 @@ const UserInfo = () => {
                                 />
                             </div>
                         </div>
+                        </Link>
                     </div>
 
 

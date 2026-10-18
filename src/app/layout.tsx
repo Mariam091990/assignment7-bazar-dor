@@ -9,7 +9,7 @@ const notoSerifBengali = Noto_Serif_Bengali({
   subsets: ["latin", "bengali"],
 });
 
-
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +24,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${notoSerifBengali.className}  h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header></Header>
+
+        <Toaster />
+
+
+        <Header />
         {children}
-        <Footer></Footer>
-        </body>
+        <Footer />
+
+      </body>
     </html>
   );
 }

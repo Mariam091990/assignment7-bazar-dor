@@ -29,9 +29,9 @@ function ChangeBadge({ product }: { product: IProduct }) {
     const isDown = direction === "down";
 
     const badgeClass = isUp
-        ? "bg-green-50 text-green-600"
+        ? "bg-red-50 text-red-600"
         : isDown
-            ? "bg-red-50 text-red-500"
+            ? "bg-green-50 text-green-600"
             : "bg-gray-100 text-gray-500";
 
  return (
