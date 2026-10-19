@@ -74,6 +74,10 @@ const handleGithubSignIn = async () => {
 
             <button onClick={handleGithubSignIn} className="btn bg-primary hover:bg-green-700 text-white">গিটহাব দ্বারা  সাইন-ইন করুন</button>
         </div>
+<p className="mt-5">
+    অ্যাকাউন্ট নেই?<link href="/signup"><button className="btn bg-primary hover:bg-green-700 text-white">সাইন আপ</button></link>  করুন
+</p>
+
         </div>
     );
 };
