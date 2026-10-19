@@ -7,11 +7,11 @@ import { toast } from "react-hot-toast";
 import Link from "next/link";
 
 const page = () => {
-  
+
     const onSubmit = async (e: React.SubmitEvent<HTMLElement>) => {
         e.preventDefault();
         const data = new FormData(e.target);
-        const user = Object.fromEntries(data.entries())as { email: string, password: string };              
+        const user = Object.fromEntries(data.entries()) as { email: string, password: string };
         console.log(user);
 
         const { data: resdata, error } = await authClient.signIn.email({
@@ -31,19 +31,19 @@ const page = () => {
         }
     }
 
-const handleGoogleSignIn = async () => {
-  const data = await authClient.signIn.social({
-    provider: "google",
-  });
-  console.log(data);
-}
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+        console.log(data);
+    }
 
-const handleGithubSignIn = async () => {
-  const data = await authClient.signIn.social({
-    provider: "github",
-  });
-  console.log(data);
-}       
+    const handleGithubSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "github",
+        });
+        console.log(data);
+    }
 
 
     return (
@@ -69,14 +69,14 @@ const handleGithubSignIn = async () => {
             </form>
             <small>-------------------------------------------------------</small>
             <div className=" flex  items-center mt-4">
-                
-            <button onClick={handleGoogleSignIn} className="btn bg-primary hover:bg-green-700 text-white">গুগল দ্বারা  সাইন-ইন করুন</button>
 
-            <button onClick={handleGithubSignIn} className="btn bg-primary hover:bg-green-700 text-white">গিটহাব দ্বারা  সাইন-ইন করুন</button>
-        </div>
-<p className="mt-5">
-    অ্যাকাউন্ট নেই?<Link href="/signup"><button>সাইন আপ</button></Link>  করুন
-</p>
+                <button onClick={handleGoogleSignIn} className="btn bg-primary hover:bg-green-700 text-white">গুগল দ্বারা  সাইন-ইন করুন</button>
+
+                <button onClick={handleGithubSignIn} className="btn bg-primary hover:bg-green-700 text-white">গিটহাব দ্বারা  সাইন-ইন করুন</button>
+            </div>
+            <p className="mt-5">
+                অ্যাকাউন্ট নেই? <Link href="/signup"><button className="btn bg-primary hover:bg-green-700 text-white">সাইন আপ</button></Link>  করুন
+            </p>
 
         </div>
     );
