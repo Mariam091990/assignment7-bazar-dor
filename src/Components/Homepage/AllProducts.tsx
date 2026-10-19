@@ -6,7 +6,7 @@ const AllProducts = ({ products }: { products: IProduct[] }) => {
 
 
     return (
-        <section className="mt-4 w-full px-4 sm:px-6 lg:px-6">
+        <section id="সব-পণ্য"  className="mt-4 w-full px-4 sm:px-6 lg:px-6">
             <div className="mx-auto w-full max-w-4xl">
                 <h2 className='mb-3 text-5xl font-semibold text-indigo-800 sm:text-xl p-2.5'> <span className="text-red-600">▲</span>
                     <span className="text-green-600">▼</span>

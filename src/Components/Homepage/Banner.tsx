@@ -1,6 +1,7 @@
 import Image from "next/image";
 import image from "../../../public/bazar-hero.png"
 import BanglaDate from "../shared/BanglaDate";
+import { Link } from "lucide-react";
 export default function Banner() {
     return (
         <section className="mx-auto mt-4 max-w-225 px-4">
@@ -9,7 +10,7 @@ export default function Banner() {
                 {/* Date Badge */}
                 <div className="mb-2 inline-flex rounded-full bg-green-50 px-3 py-1">
                     <span className="text-[11px] font-medium text-green-700">
-                       <BanglaDate />
+                        <BanglaDate />
                     </span>
                 </div>
 
@@ -29,9 +30,11 @@ export default function Banner() {
                             দামের পরিবর্তন এক জায়গায়।
                         </p>
 
-                        <button className="mt-5 rounded-md bg-green-600 px-5 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-green-700">
-                            সব দাম দেখুন
-                        </button>
+                        <Link href="/#সব-পণ্য">
+                            <button className="mt-5 rounded-md bg-green-600 px-5 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-green-700">
+                                সব দাম দেখুন
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Right Illustration */}

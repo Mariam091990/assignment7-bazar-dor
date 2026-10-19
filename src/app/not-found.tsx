@@ -44,7 +44,7 @@ export default function NotFound() {
                     </Link>
 
                     <Link
-                        href="/markets"
+                        href="/#সব-পণ্য"
                         className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#d5e1d5] bg-white px-6 py-3 text-sm font-semibold text-[#253129] transition hover:bg-[#e8f1e8] focus:outline-none focus:ring-2 focus:ring-[#07883e] focus:ring-offset-2"
                     >
                         <Search size={18} />
