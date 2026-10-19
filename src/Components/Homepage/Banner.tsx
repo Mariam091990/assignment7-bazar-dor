@@ -1,7 +1,7 @@
 import Image from "next/image";
 import image from "../../../public/bazar-hero.png"
 import BanglaDate from "../shared/BanglaDate";
-import { Link } from "lucide-react";
+import  Link from "next/link";
 export default function Banner() {
     return (
         <section className="mx-auto mt-4 max-w-225 px-4">
