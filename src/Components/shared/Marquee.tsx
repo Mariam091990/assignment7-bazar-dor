@@ -69,7 +69,7 @@ const Marquee = async () => {
                                                 : "font-semibold text-green-600"
                                         }
                                     >
-                                        {item.change.dir ? "▲" : "▼"} {""}{item.change.pct}%
+                                        {item.change.dir === "up" ? "▲" : "▼"} {""}{item.change.pct}%
                                     </span>
 
                                 </div>
