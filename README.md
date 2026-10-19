@@ -84,7 +84,7 @@ Make sure you have installed:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone <https://github.com/Mariam091990/assignment7-bazar-dor.git>
 cd bazar-dor
 ```
 
