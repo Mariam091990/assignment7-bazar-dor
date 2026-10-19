@@ -1,5 +1,6 @@
 import Image from "next/image";
 import image from "../../../public/bazar-hero.png"
+import BanglaDate from "../shared/BanglaDate";
 export default function Banner() {
     return (
         <section className="mx-auto mt-4 max-w-225 px-4">
@@ -8,7 +9,7 @@ export default function Banner() {
                 {/* Date Badge */}
                 <div className="mb-2 inline-flex rounded-full bg-green-50 px-3 py-1">
                     <span className="text-[11px] font-medium text-green-700">
-                        শুক্রবার, ৮ অক্টোবর, ২০২৬
+                       <BanglaDate />
                     </span>
                 </div>
 
