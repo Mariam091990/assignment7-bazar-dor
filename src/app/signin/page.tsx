@@ -4,7 +4,7 @@ import React from 'react';
 import { authClient } from "../../lib/auth-client";
 import { redirect } from "next/navigation";
 import { toast } from "react-hot-toast";
-
+import Link from "next/link";
 
 const page = () => {
   
@@ -75,7 +75,7 @@ const handleGithubSignIn = async () => {
             <button onClick={handleGithubSignIn} className="btn bg-primary hover:bg-green-700 text-white">গিটহাব দ্বারা  সাইন-ইন করুন</button>
         </div>
 <p className="mt-5">
-    অ্যাকাউন্ট নেই?<link href="/signup"><button className="btn bg-primary hover:bg-green-700 text-white">সাইন আপ</button></link>  করুন
+    অ্যাকাউন্ট নেই?<Link href="/signup"><button>সাইন আপ</button></Link>  করুন
 </p>
 
         </div>
