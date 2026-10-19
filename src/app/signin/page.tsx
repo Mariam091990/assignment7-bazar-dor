@@ -75,7 +75,7 @@ const page = () => {
                 <button onClick={handleGithubSignIn} className="btn bg-primary hover:bg-green-700 text-white">গিটহাব দ্বারা  সাইন-ইন করুন</button>
             </div>
             <p className="mt-5">
-                অ্যাকাউন্ট নেই? <Link href="/signup"><button className="btn bg-gray-700 hover:bg-green-700 text-white">সাইন আপ</button></Link>  করুন
+                অ্যাকাউন্ট নেই? <Link href="/signup"><button className="btn bg-gray-500 p-0.5 hover:bg-green-700 text-white">সাইন আপ</button></Link>  করুন
             </p>
 
         </div>
